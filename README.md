@@ -46,18 +46,10 @@ pip install langchain-deepseek
 pip install chromadb
 pip install langchain-chroma
 
-七、git上传与下载
-1. 上传(强哥)
-   pip freeze > requirements.txt
-   git remote add origin https://gitee.com/yi-xiaoqiang/mylangchain1.0.git
-   git init
-   git add .
-   git commit -m 'init'
-   git push -u origin "master"
-   
-2. 下载
-   git clone https://gitee.com/yi-xiaoqiang/mylangchain1.0.git
-3. 使用
+七、git 下载
+1. 下载
+   git clone https://github.com/yixiaoqiang-design/mylangchain1.0
+2. 使用
    pip install -r requirments.txt
    
 八、安装dashscope
