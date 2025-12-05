@@ -1,0 +1,28 @@
+1. langsmith: loggoing tool
+   1） smith.langchain.com 注册账户，申请api key
+   2） 程序里边使用.env, 定义环境变量
+   
+2. studio: 部署agent
+   0） 前提：langsmith已经安装
+   1） pip install langgraph-cli
+   2） 编辑 langgraph.json
+   3） 启动 langgraph dev
+   4） 访问：https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
+
+3. agent chat-ui： 和部署agent交互
+   0）前提：langsmith, 部署agent  http://localhost:2024
+   1）nodejs.  启动： node.js command prompt
+   2）npx create-agent-chat-app --project-name my-chat-ui
+   3）cd my-chat-ui
+   4）npm install
+   5）npm run dev
+   6）浏览器： http://localhost:5173/
+   6）配置信息。
+
+.env
+DEEPSEEK_API_KEY="sk-..."
+
+LANGSMITH_TRACING="true"
+LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
+LANGSMITH_API_KEY="..."
+LANGSMITH_PROJECT="my-multi-agent"
