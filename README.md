@@ -49,8 +49,19 @@ pip install langchain-chroma
 七、git 下载
 1. 下载
    git clone https://github.com/yixiaoqiang-design/mylangchain1.0
-2. 使用
+2. 安装python包
    pip install -r requirments.txt
+3. 配置 .env
+DEEPSEEK_API_KEY="sk-xxxxx"
+
+LANGSMITH_TRACING="true"
+LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
+LANGSMITH_API_KEY="lsv2_xxxxx"
+LANGSMITH_PROJECT="my-langchain"
+
+TAVILY_API_KEY="tvly-dev-xxxxx"
+
+DASHSCOPE_API_KEY="sk-xxxxx"
    
 八、安装dashscope
 pip install dashscope
